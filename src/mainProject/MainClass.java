@@ -2,6 +2,7 @@ package mainProject;
 
 import java.util.Scanner;
 
+import main.co.CoClass;
 import main.tv.TvClass;
 
 
@@ -12,6 +13,7 @@ public class MainClass {
 		int num;
 		
 		TvClass tv= new TvClass();
+		CoClass co= new CoClass();
 		
 		while(true) {
 			System.out.println("1. TV");
@@ -23,7 +25,9 @@ public class MainClass {
 			case 1: 
 				tv.tv();
 				break;
-			case 2: break;
+			case 2: 
+				co.co();
+				break;
 			case 3: break;
 			case 4: 
 				System.out.println("종료합니다");
